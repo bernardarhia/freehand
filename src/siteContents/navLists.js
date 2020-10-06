@@ -1,0 +1,22 @@
+export const navLists = [ 
+    {
+        name:"Home",
+        class:"nav__list",
+        path:"/"
+    },
+    {
+        name:"Portfolio",
+        class:"nav__list",
+        path:"/"
+    },
+    {
+        name:"Pages",
+        class:"nav__list",
+        path:"/"
+    },
+    {
+        name:"Blog",
+        class:"nav__list",
+        path:"/"
+    },
+]

@@ -1,0 +1,81 @@
+.btn{
+  outline: none;
+}
+
+// Button sizes
+.btn__small{
+    padding: .8rem 3.5rem;
+    font-size: 16px;
+}
+
+.btn__medium{
+    padding: 1rem 4rem;
+    font-size: 18px;
+}
+
+.btn__large{
+    padding: 1.5rem 5rem;
+    font-size: 20px;
+}
+
+.btn__mobile{
+    width: 90%;
+    margin: 0 auto;
+}
+
+// button colors
+
+.btn__normal{
+    background: inherit;
+}
+
+.btn__primary{
+    background: $primary_color;
+    color: #fff !important;
+    &:hover{
+        transition: .3s ease;
+        color: $primary_color !important;
+        background: #fff;
+        border: 1px solid $primary_color;
+    }
+}
+
+.btn__secondary{
+    background: $secondary_color;
+    color: #fff !important;
+    transition: .3s ease;
+    &:hover{
+        background: #fff;
+        color: $secondary_color !important;
+        border: 1px solid $secondary_color;
+
+    }
+}
+// 
+
+.btn__primary__outline{
+    border: 1px solid $primary_color;
+    color: $primary_color;
+
+
+}
+
+.btn__secondary__outline{
+    border: 1px solid $secondary_color;
+    color: $secondary_color;
+
+
+}
+
+.btn__normal__outline{
+    border: none;
+}
+
+// button shape
+.btn__rounded{
+    border-radius: 2rem;
+}
+
+.btn__curved{
+    border-radius: 5px;
+}

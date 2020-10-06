@@ -1,0 +1,28 @@
+.nav{
+   @extend %flex_sb;
+    height: 80px;
+    border-bottom: 1px solid #D8D8D8;
+    padding: 2rem 0;
+    .logo__container{
+        padding: 1.5rem 0;
+        .logo{
+            font-size: 24px;
+        }
+    }
+
+    &__lists{
+        @extend %flex_sb;
+
+        .nav__list{
+            color: #16133E;
+            padding: 0 1.5rem;
+        }
+    }
+
+    &__btns{
+        @extend %flex_sb;
+        .btn{
+            margin: 0 1.5rem;
+        }
+    }
+}

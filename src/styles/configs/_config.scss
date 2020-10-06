@@ -1,0 +1,38 @@
+// variables
+
+$primary_color:#007FFC;
+$secondary_color:#16133E;
+
+
+%auto_center{
+    display: grid;
+    place-items: center;
+}
+
+%flex_sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    margin-bottom: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
