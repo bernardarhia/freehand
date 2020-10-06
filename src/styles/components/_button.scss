@@ -1,5 +1,7 @@
 .btn{
   outline: none;
+  cursor: pointer;
+  display: block;
 }
 
 // Button sizes
@@ -57,6 +59,10 @@
     border: 1px solid $primary_color;
     color: $primary_color;
 
+    &:hover{
+        background: $primary_color;
+        color: #fff;
+    }
 
 }
 

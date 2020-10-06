@@ -1,0 +1,59 @@
+.showcase{
+    margin: 6rem 0;
+    @extend %flex_sb;
+    &__content{
+        flex-basis: 50%;
+        margin-bottom: 3rem;
+        &__header{
+            .head{
+                font-size: 50px;
+                padding-bottom: 2rem;
+                color: $secondary_color;
+            }
+            .para{
+                width: 80%;
+                color: #183B56;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    &__cta{
+        display: flex;
+        .cta__second{
+            padding: 0 1rem;
+        }
+    }
+
+    &__image{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .navigators{
+            position: relative;
+            .right,.left{
+                position: absolute;
+                background: $secondary_color;
+                width: 50px;
+                height:50px;
+                border: none;
+                outline: none;
+                transform: translate(0%, -50%);
+                svg{
+                    fill: #fff;
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+            .right{
+                right: -20px;    
+                top: 50%;
+            }
+            .left{
+                left: -20px;
+                top: 50%;
+            }
+        }
+    }
+}
+
