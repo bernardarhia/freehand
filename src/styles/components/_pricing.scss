@@ -19,8 +19,10 @@
     }
 
     &__bars{
+        margin-bottom: 5rem;
         .bars{
             @extend %flex_sb;
+            margin-bottom: 4rem;
         }
         .bar{
             height: 4px;
@@ -40,5 +42,57 @@
                     background: #FA6770;
                 }
 
+    }
+
+    &__cards{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-gap: 1.5rem;
+        .header{
+            margin-bottom: 1rem;
+
+            p{
+                font-size: 24px;
+                color: $secondary_color;
+            }
+        }
+
+        .price{
+            margin: 2rem 0 .5rem 0;
+            p{
+                font-size: 40px;
+            }
+
+            .primary{
+                color: $primary_color;
+            }
+            .secondary{
+                color: #56CBAE;
+            }
+            .danger{
+                color: #FA6770;
+            }
+        }
+        .duration{
+            margin-bottom: 2rem;
+            p{
+                color: #87A1B6;
+            }
+        }
+        .content{
+            margin-bottom: 2.5rem;
+            p{
+                color: #87A1B6;
+            }
+        }
+        .pricing__card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(138, 138, 138, 0.3);
+            padding: 2rem 1rem;
+        }
     }
 }

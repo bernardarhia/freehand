@@ -1,12 +1,7 @@
 import React from "react"
-const PrincingCard = ({
-  // children,
-  header,
-  price,
-  duration,
-  paragraph,
-  contentColor
-}) => {
+const PrincingCard = (props) => {
+  const [element] = props
+const {header, price, duration, paragraph,contentColor} = element;
   return (
     <div className="pricing__card">
       <div className="header">
@@ -21,9 +16,9 @@ const PrincingCard = ({
       <div className="content">
         <p>{paragraph}</p>
       </div>
-      {/* <div className="pricing__button">
-          {children}
-      </div> */}
+      <div className="pricing__button">
+          {props.children}
+      </div>
     </div>
   )
 }

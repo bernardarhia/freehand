@@ -4,7 +4,7 @@ export const starterPlan = [
         price:"Free",
         duration:"One month",
         paragraph:"Lorem ipsum dolor sit amet, coectetur adipiscing elit. ",  
-        contentColor:"primary__bar"
+        contentColor:"primary"
     }
 ]
 export const monthlyPlan = [
@@ -13,7 +13,7 @@ export const monthlyPlan = [
         price:"$20.00",
         duration:"Per month",
         paragraph:"Lorem ipsum dolor sit amet, coectetur adipiscing elit. ",
-        contentColor:"secondary__bar"
+        contentColor:"secondary"
     }
 ]
 export const yearlyPlan = [
@@ -22,6 +22,6 @@ export const yearlyPlan = [
         price:"$50.00",
         duration:"Per year",
         paragraph:"Lorem ipsum dolor sit amet, coectetur adipiscing elit.",
-        contentColor:"danger__bar"
+        contentColor:"danger"
     }
 ]

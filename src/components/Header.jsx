@@ -24,6 +24,7 @@ const Header = () => {
           btnSize="btn__small"
           btnStyle="btn__secondary__outline"
           isButton={false}
+          to="/"
         >
           Sign Up
         </Button>
@@ -32,6 +33,7 @@ const Header = () => {
           btnShape="btn__curved"
           btnSize="btn__small"
           isButton={false}
+          to="/"
         >
           Login In
         </Button>
