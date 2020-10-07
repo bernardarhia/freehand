@@ -1,0 +1,32 @@
+.experience{
+    width: 100%;
+    margin: 5rem 0;
+    padding: 2rem 0;
+
+&__content{
+    .header{
+        margin: 1rem 0;
+        span{
+            display: block;
+            font-size: 16px;
+            color: #87A1B6;
+        }
+    }
+
+    .main__content{
+        p{
+            font-size: 40px;
+            color: $secondary_color;
+            font-weight: 500;
+        }
+        margin-bottom: 1rem;
+    }
+
+    .sub__content{
+        p{
+            color: #5A7184;
+            font-size: 18px;
+        }
+    }
+}
+}

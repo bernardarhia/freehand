@@ -1,0 +1,42 @@
+.services{
+
+    margin-bottom: 10rem;
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+
+        .card{
+            border: 1px solid #E5EAF4;
+            padding: 2rem;
+            border-radius: 5px;
+            .icon{
+                width: 55px;
+                height: 55px;
+                border: 1px solid #E5EAF4;
+                border-radius: 5px;
+                display: grid;
+                place-items: center;
+                margin-bottom: 1rem;
+            }
+            .header{
+                margin-bottom: 1rem;
+                p{
+                    font-size: 24px;
+                    color:$secondary_color;
+                }
+            }
+
+            .content{
+                margin-bottom: 1rem;
+                p{
+                    font-size: 1rem;
+                    width: 80%;
+                    line-height: 1.5;
+                }
+            }
+
+            
+        }
+    }
+}
