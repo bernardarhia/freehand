@@ -22,7 +22,7 @@ const Service = () => {
                 <div className="content">
                   <p>{serviceCard.content}</p>
                 </div>
-                <Button>Learn more</Button>
+                <Button to="/">Learn more</Button>
               </div>
             )
           })}

@@ -1,0 +1,44 @@
+.pricing{
+    margin-bottom: 10rem;
+
+    &__content{
+        .header{
+            margin-bottom: 1rem;
+            p{
+                font-size: 40px;
+                color: $secondary_color;
+            }
+        }
+        .paragraph{
+            margin-bottom: 5rem;
+            p{
+                color: #5A7184;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__bars{
+        .bars{
+            @extend %flex_sb;
+        }
+        .bar{
+            height: 4px;
+            background: #000;
+            flex: 1;
+        }
+                .primary__bar{
+                    background: $primary_color;
+                    margin-right: 1rem;
+                }
+                .secondary__bar{
+                    background: #56CBAE;
+                    margin-right: 1rem;
+
+                }
+                .danger__bar{
+                    background: #FA6770;
+                }
+
+    }
+}
