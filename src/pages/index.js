@@ -1,4 +1,5 @@
 import React from "react"
+import Ada from "../components/Ada";
 import Features from "../components/Features";
 import Header from "../components/Header";
 import Pricing from "../components/Pricing";
@@ -13,6 +14,7 @@ export default function Home() {
       <Service />
       <Features />
       <Pricing />
+      <Ada />
     </div>
   )
 }

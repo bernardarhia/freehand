@@ -57,3 +57,34 @@
     }
 }
 
+
+@media (max-width:960px){
+    .showcase{
+        display: block;
+        width: 98%;
+        margin: 1rem auto;
+    }
+     
+     
+}
+
+
+
+@media (max-width:768px){
+    .showcase{
+        a{
+            display: none;
+        }
+        &__content{
+            text-align: center;
+            &__header{
+                .head{
+                    font-size: 30px;          
+                }
+                .para{
+                    width: 100%;
+                }
+            }
+        }
+        }
+    }

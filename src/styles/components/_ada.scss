@@ -1,0 +1,95 @@
+.ada{
+    margin: 5rem 0;
+  background: url("https://res.cloudinary.com/everich1/image/upload/v1602011320/bg_oe0krs.png");
+    background-repeat: no-repeat;
+   background-size: cover;
+   height: 390px;
+   display: grid; 
+   place-items: center;
+   background-position: center;
+
+   &__content{
+       margin: 2rem 0 0 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+        color: #fff;
+       .header{
+           margin-bottom: 1rem;
+           p{
+               color: #fff;
+               font-size: 40px;
+               line-height: 52px;
+           }
+       }
+       .paragraph{
+           margin-bottom: 1rem;
+           p{
+               font-size: 18px;
+               line-height: 16px;
+           }
+       }
+   }
+
+   &__btn{
+       @extend %flex_sb;
+
+       a{
+        border: 1px solid #fff !important;
+        margin: 3rem 1rem 0 1rem;
+        font-size: 16px;
+
+        &:nth-child(2){
+            color: #fff;
+        }
+       }
+
+       
+   }
+
+}
+
+
+
+@media (max-width:768px){
+    .ada{
+       height: auto;
+      ;
+    
+       &__content{
+           display: block;
+           .header{
+               p{
+                   margin-top: 3rem;
+                   font-size: 20px;
+                   line-height: 1.2;
+               }
+           }
+           .paragraph{
+               margin-bottom: 1rem;
+               p{
+                   font-size: 16px;
+               }
+           }
+       }
+    
+       &__btn{
+        display: block;
+
+           a{
+           text-align: center;
+            &:nth-child(2){
+                margin-bottom: 5rem;
+                color: red;
+            }
+           }
+    
+           
+       }
+    
+    }
+    
+    
+}
+

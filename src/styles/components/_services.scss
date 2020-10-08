@@ -40,3 +40,53 @@
         }
     }
 }
+
+
+
+@media (max-width:960px){
+    .services{
+        &__cards{
+            grid-template-columns: repeat(2,1fr);    
+            .card{
+                .header{
+                    margin-bottom: 1rem;
+                    p{
+                        font-size: 20px;
+                    }
+                }    
+            }
+        }
+    }
+    
+}
+@media (max-width:768px){
+    .services{
+        &__cards{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+            width: 100%;
+            .card{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                .content{
+                    p{
+                        width: 100%;
+                    }
+                }
+                .header{
+                    p{
+                        font-size: 18px;
+                    }
+                }    
+            }
+        }
+    }
+    
+}

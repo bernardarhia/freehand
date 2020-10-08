@@ -23,3 +23,23 @@
        }
     }
 }
+
+
+
+@media (max-width:768px){
+    .features{
+        &__cards{
+          display: block;
+          width: 98%;
+          margin: 3rem auto;
+           .card{
+               margin-bottom: 1rem;
+               p{
+                font-size: 24px;
+                width: 100%;
+                text-align: center;
+               }
+           }
+        }
+    }
+}

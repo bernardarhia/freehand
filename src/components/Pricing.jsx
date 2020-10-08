@@ -5,7 +5,7 @@ import {
   starterPlan,
   monthlyPlan,
   yearlyPlan,
-} from "../siteContents/pricingCards";
+} from "../siteContents/pricingCards"
 const Pricing = () => {
   return (
     <div className="pricing">
@@ -30,9 +30,37 @@ const Pricing = () => {
           )}
         </div>
         <div className="pricing__cards">
-          <PricingCard {...starterPlan}><Button to="/" btnShape="btn__rounded" btnSize="btn__small" btnStyle="btn__secondary__outline">Get Started</Button></PricingCard>
-          <PricingCard {...monthlyPlan}><Button to="/" btnShape="btn__rounded" btnSize="btn__small" btnStyle="btn__secondary__outline">Get Started</Button></PricingCard>
-          <PricingCard {...yearlyPlan}><Button to="/" btnShape="btn__rounded" btnSize="btn__small" btnColor="btn__secondary">Get Started</Button> </PricingCard>
+          <PricingCard {...starterPlan}>
+            <Button
+              to="/"
+              btnShape="btn__rounded"
+              btnSize="btn__small"
+              btnStyle="btn__secondary__outline"
+            >
+              Get Started
+            </Button>
+          </PricingCard>
+          <PricingCard {...monthlyPlan}>
+            <Button
+              to="/"
+              btnShape="btn__rounded"
+              btnSize="btn__small"
+              btnStyle="btn__secondary__outline"
+              
+            >
+              Get Started
+            </Button>
+          </PricingCard>
+          <PricingCard {...yearlyPlan}>
+            <Button
+              to="/"
+              btnShape="btn__rounded"
+              btnSize="btn__small"
+              btnColor="btn__secondary"
+            >
+              Get Started
+            </Button>{" "}
+          </PricingCard>
         </div>
       </div>
     </div>

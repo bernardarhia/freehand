@@ -96,3 +96,30 @@
         }
     }
 }
+
+
+
+
+
+@media (max-width:768px){
+    .pricing{
+
+        &__content{
+            .header{
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        &__cards{
+           grid-template-columns: 1fr;
+            .header{
+                p{
+                    font-size: 20px;
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+    
+}
