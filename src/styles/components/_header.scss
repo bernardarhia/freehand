@@ -1,8 +1,12 @@
 .nav{
-   @extend %flex_sb;
+    @extend %flex_sb;
     height: 80px;
     border-bottom: 1px solid #D8D8D8;
     padding: 2rem 0;
+&__container{
+    @extend %flex_sb;
+}
+    position: relative;
     .logo__container{
         padding: 1.5rem 0;
         .logo{
@@ -25,11 +29,47 @@
             margin: 0 1.5rem;
         }
     }
+            .toggle{
+                display: none;
+            }
 }
 
 
-@media (max-width:960px){
+@media (max-width:990px){
     .nav{
-        display: none;
-    }
+        height: auto;
+        transition:height .3s ease;
+        &__container{
+            display: block;
+            height: auto;
+            padding: 1rem;
+            transition:height .3s ease;
+        }
+        display: block;
+         border:none;
+         &__lists{
+     display: block;
+             .nav__list{
+                 display: block;
+                margin: 1rem 0;
+                 text-align: center;
+             }
+         }
+     
+         &__btns{
+           display: block;
+             .btn{
+                 margin: 1.5rem 0;
+                 text-align: center;
+                 display: block;
+             }
+         }
+                 .toggle{
+                     display: block;
+                     position: absolute;
+                     right: 0;
+                     top: 60px;
+                 }
+     }
+     
 }

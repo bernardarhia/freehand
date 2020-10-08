@@ -1,13 +1,25 @@
-import React from "react"
+import React,{useState} from "react"
 import { navLists } from "../siteContents/navLists"
 import { Link } from "gatsby"
 import Button from "./sub_components/Button"
+import {FaTimes} from "react-icons/fa";
+import {GiHamburgerMenu} from "react-icons/gi";
 const Header = () => {
+  const [toggleMenuBar, setToggleMenuBar] = useState(true);
+
+  const handleTogglerMenuar = ()=>{
+      setToggleMenuBar(!toggleMenuBar);
+  }
+
+  window.addEventListener("resize", () => {})
+
   return (
     <nav className="nav">
       <div className="logo__container">
         <h3 className="logo">Logo</h3>
       </div>
+      <div className="nav__container" style={{display:toggleMenuBar === false ?"block":"none" }}>
+
       <ul className="nav__lists">
         {navLists.map((navList, index) => {
           return (
@@ -16,8 +28,6 @@ const Header = () => {
             </li>
           )
         })}
-      </ul>
-
       <div className="nav__btns">
         <Button
           btnShape="btn__curved"
@@ -37,6 +47,12 @@ const Header = () => {
         >
           Login In
         </Button>
+      </div>
+      </ul>
+
+      </div>
+      <div className="toggle" onClick={handleTogglerMenuar}>
+           {toggleMenuBar ? <GiHamburgerMenu />:<FaTimes />}
       </div>
     </nav>
   )
