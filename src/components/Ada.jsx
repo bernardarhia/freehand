@@ -1,14 +1,9 @@
-import React, { useState} from "react"
+import React from "react"
 import Button from "./sub_components/Button"
 const Ada = () => {
-  const [screenWidth, setScreenWidth] = useState(false)
 
 
-    window.addEventListener("resize", () => {
-      window.innerWidth <= 768
-        ? setScreenWidth(true)
-        : setScreenWidth(false)
-    })
+   
   return (
     <div className="ada">
       <div className="ada__content">
@@ -25,13 +20,13 @@ const Ada = () => {
           <Button
             to="/"
             btnColor="btn__normal"
-            btnShape={screenWidth? "":"btn__rounded"} 
+            btnShape="btn__rounded" 
             btnStyle="btn__secondary__outline"
-            btnSize={screenWidth ? "btn__mobile":"btn__small"}
+            btnSize="btn__small"
           >
             Try it for free
           </Button>
-          <Button to="/" btnShape={screenWidth? "":"btn__rounded"} btnSize={screenWidth ? "btn__mobile":"btn__small"}>
+          <Button to="/" btnShape="btn__rounded" btnSize= "btn__mobile">
             Watch demo
           </Button>
         </div>

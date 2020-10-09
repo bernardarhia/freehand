@@ -1,20 +1,19 @@
 import React from "react"
 const PrincingCard = (props) => {
-  const [element] = props
-const {header, price, duration, paragraph,contentColor} = element;
+
   return (
     <div className="pricing__card">
       <div className="header">
-        <p>{header}</p>
+        <p>{props[0].header}</p>
       </div>
       <div className="price">
-        <p className={contentColor}>{price}</p>
+        <p className={props[0].contentColor}>{props[0].price}</p>
       </div>
       <div className="duration">
-        <p>{duration}</p>
+        <p>{props[0].duration}</p>
       </div>
       <div className="content">
-        <p>{paragraph}</p>
+        <p>{props[0].paragraph}</p>
       </div>
       <div className="pricing__button">
           {props.children}

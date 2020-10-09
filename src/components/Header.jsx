@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import { navLists } from "../siteContents/navLists"
 import { Link } from "gatsby"
 import Button from "./sub_components/Button"
@@ -8,21 +8,24 @@ import { GiHamburgerMenu } from "react-icons/gi"
 // Logo for the header
 import logo from "../images/head-logo.png";
 const Header = () => {
-  const [toggleMenuBar, setToggleMenuBar] = useState(true)
+  const [toggleMenuBar, setToggleMenuBar] = useState(null)
 
   const handleTogglerMenuBar = () => {
-    console.log(toggleMenuBar);
     setToggleMenuBar(!toggleMenuBar)
     console.log(toggleMenuBar);
   }
 
-  window.addEventListener("resize", () => {
+  const resize = ()=>{
     if (window.innerWidth > 990) {
       setToggleMenuBar(false)
     } else {
       setToggleMenuBar(true)
     }
-  })
+  }
+  useEffect(()=>{
+
+    window.addEventListener("resize", resize)
+  },[])
 
   return (
     <nav className="nav">
