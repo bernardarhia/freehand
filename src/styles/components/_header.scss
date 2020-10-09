@@ -6,6 +6,10 @@
 &__container{
     @extend %flex_sb;
 }
+
+.hide{
+    display: none;
+}
     position: relative;
     .logo__container{
         padding: 1.5rem 0;
@@ -45,6 +49,7 @@
             padding: 1rem;
             transition:height .3s ease;
         }
+
         display: block;
          border:none;
          &__lists{

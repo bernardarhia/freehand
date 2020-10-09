@@ -5,9 +5,11 @@ import Header from "../components/Header";
 import Pricing from "../components/Pricing";
 import Service from "../components/Service";
 import Showcase from "../components/Showcase";
+import Footer from "../components/Footer";
 import "../styles/app.scss";
 export default function Home() {
   return (
+    <>
     <div className="container">
       <Header />
       <Showcase />
@@ -16,5 +18,7 @@ export default function Home() {
       <Pricing />
       <Ada />
     </div>
+      <Footer />
+    </>
   )
 }

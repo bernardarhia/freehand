@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState} from "react"
 import Button from "./sub_components/Button"
 const Ada = () => {
   const [screenWidth, setScreenWidth] = useState(false)
@@ -9,8 +9,6 @@ const Ada = () => {
         ? setScreenWidth(true)
         : setScreenWidth(false)
     })
-
-    console.log(screenWidth)
   return (
     <div className="ada">
       <div className="ada__content">
